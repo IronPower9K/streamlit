@@ -9,7 +9,7 @@ if st.button('Say hello'):
 else:
     st.write('Goodbye') 
 
-option = st.selectbox('좋아하는 동물은?',('강아지','말','토끼','코끼리'))
+option = st.selectbox('좋아하는 동물은?',('강아지','고양이','말','토끼','코끼리'))
 
 st.write('내가 좋아하는 동물은', option,'입니다.')
 st.write(f'좋아하는 동물은 {option}입니다.')
