@@ -47,7 +47,7 @@ if add_selectbox == '체질량계산기':
 elif add_selectbox == '갭마인더':
     st.header('여기는 갭마인더입니다.')
     st.write('파일 읽어오기')
-    data = pd.read_excel('gapminder.xlsx')
+    data = pd.read_csv('gapminder.csv')
     st.write(data)
     
     colors=[]
