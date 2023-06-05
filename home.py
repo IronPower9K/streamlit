@@ -3,15 +3,15 @@ from PIL import Image
 
 def bmih(bmi):
     if bmi <= 18.5:
-        mess = '저체중'
+        mess = '저체중입니다.'
     elif bmi < 23:
-        mess = '정상'
+        mess = '정상입니다.'
     elif bmi  < 25:
-        mess = '과체중'
+        mess = '과체중입니다.'
     elif bmi < 30:
-        mess = '고도비만'
+        mess = '고도비만입니다.'
     else:    
-        mess = '초고도비만'
+        mess = '초고도비만입니다.'
 
     return mess
 
@@ -34,8 +34,8 @@ if st.button('계산'):
     
 
     st.write('당신의 체질량 지수는',bmif,'입니다.')
-    bmig = '당신은',bmih(bmi),'입니다.'
-    st.success(bmig)
+   
+    st.success(bmih(bmi))
     image = Image.open('cow.jpg')
     st.image(image, caption='Oh my god!')
 
