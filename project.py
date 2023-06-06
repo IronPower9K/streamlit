@@ -1,6 +1,6 @@
 import pandas as pd
 
-from fbprophet import Prophet
+from prophet import Prophet
 import yfinance as yf
 
 
@@ -25,14 +25,6 @@ d = st.date_input(
     dt_now)
 
 number = st.number_input('몇주를 사셨습니까?')
-
-# finance ="005930.KS" #str(input('종목명을 기입하세요(005930.KS)'))
-
-
-
-
-
-
 
 if st.button('계산'):
     
