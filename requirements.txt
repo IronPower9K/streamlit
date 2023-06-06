@@ -1,6 +1,7 @@
 pandas
 matplotlib
 streamlit
+cmake
 Cython>=0.29.23
 numpy==1.22.4
 yfinance==0.2.18
